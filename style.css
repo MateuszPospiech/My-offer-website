@@ -1,0 +1,957 @@
+body {
+    margin: 0px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 6.8em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 6.0em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 60px 0 80px 0;
+}
+
+h3 {
+    font-size: 4.2em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 3.4em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 2.6em;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+li {
+    list-style: none;
+    list-style-image: url("img/punkt4.png");
+}
+
+li:before {
+    list-style-position: 10px;
+    padding-right: 5px;
+}
+
+.contactFormHalf input,
+#message {
+    border: 4px dashed #555;
+    width: 241px;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.contactFormHalf input:focus,
+#message:focus {
+    border: 4px dashed #888;
+    outline: none;
+}
+
+#message {
+    width: 495px;
+    height: 125px;
+    margin-top: 8px;
+}
+
+.contactFormButton input {
+    padding: 10px 30px 10px 30px;
+    margin: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #813f9c;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0px;
+    transition: all 0.4s;
+}
+
+.contactFormButton input:focus {
+    outline: none;
+}
+
+.contactFormButton input:hover {
+    outline: none;
+    cursor: pointer;
+    background-color: #c686e0;
+    transition: all 0.6s;
+    letter-spacing: 3px;
+    padding: 10px 21px 10px 21px;
+}
+
+/*Animate images*/
+
+.imageLoadFromTop {
+    transform: translateY(-60%) scale(0.8);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.imageLoadFromLeft {
+    transform: translateX(-60%) scale(0.8);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.imageLoadFromRight {
+    transform: translateX(60%) scale(0.8);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.imageLoadFromTopActive {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*End animate images*/
+
+/* Slider */
+
+.slider {
+    background-image: url("img/slider.png");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.slider-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-text {
+    text-align: center;
+    margin-top: 30vh;
+    color: #e4e4e4;
+}
+
+#buttonArrow {
+    position: absolute;
+    bottom: 10vh;
+    border: 5px solid white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #292929;
+    transition: 0.4s;
+}
+
+#buttonArrow i {
+    bottom: -25%;
+    transform: translateY(-50%);
+    position: relative;
+    animation: arrow 1.2s infinite linear;
+}
+
+#buttonArrow:hover {
+    cursor: pointer;
+    background: black;
+    transition: 0.6s;
+}
+
+/* Slider end */
+
+.main {
+    position: relative;
+}
+
+/* Offer */
+
+.offer {
+    overflow: auto;
+}
+
+.offerHeader {
+    text-align: center;
+}
+
+.offerHeaderPrice {
+    text-align: center;
+}
+
+#offerCol {
+    float: left;
+    width: 31%;
+    text-align: center;
+    margin: 2vh;
+}
+
+#offerTitle {
+    font-weight: 600;
+    font-size: 3.4em;
+    padding: 40px 0 20px 0;
+    letter-spacing: 3px;
+}
+
+#offerText {
+    line-height: 1.5;
+    font-size: 1.8em;
+}
+
+#offerText p:last-Child {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.offerColumns {
+    overflow: auto;
+}
+
+/* Offer end */
+
+/* Price list */
+
+.priceListText {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 30px;
+    color: #333333;
+    padding: 20px 0 0 15px;
+}
+
+.priceList {
+    padding-top: 60px;
+    overflow: auto;
+}
+
+.priceListKnowledge {
+    height: 650px;
+    margin: 80px 80px 20px 80px;
+}
+
+.priceListKnowledgeImg {
+    float: left;
+    position: absolute;
+    left: -1vw;
+}
+
+.doYouKnow {
+    clear: both;
+    margin-top: 120px;
+    background-image: url(img/paralax.jpg);
+    padding: 40px 0;
+    background-attachment: fixed;
+}
+
+.doYouKnowParalax {
+    color: white;
+    padding: 0px 40px 20px 40px;
+    border: solid white 2px;
+    margin: 0 80px;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 40px;
+    border-radius: 8px;
+}
+
+.doYouKnowParalax .offerHeader {
+    text-align: center;
+    margin: -20px;
+}
+
+.doYouKnow #offerText {
+    text-align: justify;
+}
+
+.priceList1 {
+    clear: both;
+    overflow: auto;
+    padding: 20px 80px;
+}
+
+.priceListImgRightI,
+.priceListImgRightIII {
+    float: right;
+    position: inherit;
+    /* tymczasowo */
+    /* position: absolute;
+    left: 70vw;*/
+    /*z-index: -1; temp - bacground #ddd */
+    overflow: hidden;
+}
+
+.priceListImgRightI {
+    margin-top: 5vh;
+}
+
+.priceListImgRightIII {
+    margin-top: 15vh;
+}
+
+
+.priceListImgLeft {
+    float: left;
+    position: inherit;
+    margin-top: 10vh;
+    /* tymczasowo */
+    /* position: absolute;
+    left: 70vw;*/
+    /*z-index: -1; temp - bacground #ddd */
+    overflow: hidden;
+}
+
+.priceList1Container {
+    float: left;
+    /* width:60%; */
+}
+
+.priceList1Title {
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.priceList1Price {
+    font-weight: 700;
+    color: #f9dc73;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 2px 2px 6px #945900;
+}
+
+.priceList2 {
+    clear: both;
+    overflow: auto;
+    padding: 20px 80px;
+}
+
+/*zastąpione priceListImgRight
+.priceList2Img {
+    float: left;
+     tymczasowo 
+    position: absolute;
+    left: 10vw;
+    z-index: -1;
+}*/
+
+.priceList2Container {
+    float: right;
+}
+
+.priceList2Price {
+    font-weight: 700;
+    color: #f9dc73;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 2px 2px 6px #945900;
+}
+
+.priceList3 {
+    clear: both;
+    overflow: auto;
+    padding: 20px 80px;
+}
+
+/*zastąpione priceListImgRight .priceList3Img {
+    float: left;
+    width: 40%;
+}*/
+
+.priceList3Container {
+    float: left;
+    width: 60%;
+}
+
+.priceList3Price {
+    font-weight: 700;
+    color: #f9dc73;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 2px 2px 6px #945900;
+}
+
+/* Price list end */
+
+/* Gallery */
+
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    margin-top: 80px;
+}
+
+.galleryText {
+    /*    font-size: 60px; po zmianie z px na em*/
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#sliderButtonsContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sliderButtonsContainer .sliderButtons {
+    font-size: 2.8em;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.25s;
+    padding: 0;
+    float: left;
+    padding: 2px 4px 2px 4px;
+    /*padding like this because icon is not square (24x28 px)*/
+}
+
+#sliderButtonsContainer .sliderButtons:hover {
+    background-color: #888;
+    border-radius: 8px;
+}
+
+/* Gallery end */
+
+/* Contact */
+
+.contact {
+    overflow: auto;
+    margin-top: 100px;
+    padding: 10px 80px 80px 80px;
+    background: #f4f4f4;
+}
+
+.contactLeft {
+    float: left;
+    margin-left: 12%;
+}
+
+.contactRight {
+    position: absolute;
+    left: 55vw;
+}
+
+.contactLeftText {
+    margin-bottom: 40px;
+    font-size: 3.3em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contactFormHalf {
+    width: 50%;
+    float: left;
+
+}
+
+/* Phone */
+
+.contactLeftPhone {
+    height: 90px;
+}
+
+.contactLeftPhoneImg {
+    float: left;
+}
+
+.contactLeftPhoneText {
+    overflow: hidden;
+    transform: translateY(-25px);
+    padding-left: 20px;
+}
+
+/* Phone end */
+
+/* Email */
+
+.contactLeftEmail {
+    height: 90px;
+}
+
+.contactLeftEmailImg {
+    float: left;
+}
+
+.contactLeftEmailText {
+    overflow: hidden;
+    transform: translateY(-25px);
+    padding-left: 20px;
+}
+
+/* Email end */
+
+/* Fb */
+
+.contactLeftFb {
+    height: 90px;
+}
+
+.contactLeftFbImg {
+    float: left;
+}
+
+.contactLeftFbText {
+    overflow: hidden;
+    transform: translateY(-25px);
+    padding-left: 20px;
+}
+
+/* Fb end */
+
+/* Contact - right site */
+
+.contactRightText {
+    margin-bottom: 40px;
+    font-size: 3.3em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contactRightForm {
+    /* border: dotted; */
+    /* height: 220px; */
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+}
+
+/* Contact - right site end */
+
+/* Contact end */
+
+/* Footer */
+
+.footer {
+    padding: 4em;
+    padding-left: 16em;
+    padding-right: 40px;
+    background: #4a4a4a;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #fff
+}
+
+/*  Footer end */
+
+/*mail*/
+
+.mail {
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.mail h3 {
+    margin: 0;
+    text-align: center;
+
+}
+
+.mail .contactFormButton input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*end mail*/
+
+/* Bounce arrow */
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+/* Bounce arrow end */
+
+/*Responsive*/
+
+@media(max-width:1366px) {
+    body {
+        font-size: 9px;
+    }
+    #offerCol {
+        width: 30%;
+    }
+}
+
+@media(max-width:1280px) {
+    body {
+        font-size: 8.5px;
+    }
+    #offerCol {
+        width: 30%;
+    }
+}
+
+@media(max-width:1024px) {
+    body {
+        font-size: 9px;
+    }
+
+    #offerCol {
+        margin: 1vh;
+        width: 30%;
+    }
+
+    .priceList2Container {
+        width: 60%;
+    }
+
+    .contactFormHalf input,
+    #message {
+        width: 220px;
+    }
+
+    #message {
+        width: 452px;
+    }
+
+    .contactLeft {
+        margin-left: 0%;
+    }
+    .contactRight {
+        left: 52vw;
+    }
+    .footer {
+        padding-left: 12em;
+    }
+}
+
+@media(min-width:769px) and (max-width:812px)
+/*iPhone X*/
+
+    {
+    body {
+        font-size: 8.5px;
+    }
+
+    #offerCol {
+        margin: 1vh;
+        width: 30%;
+    }
+
+    .contactFormHalf input,
+    #message {
+        width: 280px;
+    }
+
+    #message {
+        width: 602px;
+    }
+
+    .contactLeft {
+        margin-left: 0%;
+    }
+    .contactRight {
+        left: 52vw;
+    }
+    .footer {
+        padding: 3em;
+        padding-left: 10em;
+    }
+    /*Contact form*/
+    .contactRight {
+        clear: both;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactLeft {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactRightText,
+    .contactLeftText {
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: 8.5px;
+    }
+
+    #offerCol {
+        margin: 1vh;
+        width: 30%;
+    }
+
+    .priceListImgRightI,
+    .priceListImgRightIII {
+        position: absolute;
+        right: 10px;
+        margin-top: 5vh;
+    }
+    .priceListImgLeft {
+        position: absolute;
+        left: 10px;
+        margin-top: 5vh;
+    }
+
+    .contactFormHalf input,
+    #message {
+        width: 280px;
+    }
+
+    #message {
+        width: 580px;
+    }
+
+    .contactLeft {
+        margin-left: 0%;
+    }
+    .contactRight {
+        left: 52vw;
+    }
+    .footer {
+        padding: 3em;
+        padding-left: 10em;
+    }
+    /*Contact form*/
+    .contactRight {
+        clear: both;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactLeft {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactRightText,
+    .contactLeftText {
+        text-align: center;
+    }
+}
+
+@media(max-width: 736px) {
+    /*Landscape in phones*/
+    /*Slider*/
+    .slider-text {
+        margin-top: 15vh;
+    }
+    #buttonArrow {
+        display: none;
+    }
+
+    /*Paralax*/
+    .doYouKnowParalax {
+        margin: 0 40px;
+    }
+
+    /*Contact form*/
+    .contactFormHalf input,
+    #message {
+        width: 270px;
+    }
+
+    #message {
+        width: 552px;
+    }
+    /*    Price list*/
+    .priceList {
+        padding-top: 20px;
+    }
+
+    .priceList1 {
+        margin-top: -40px;
+    }
+    .priceList3Container {
+        width: 100%;
+    }
+
+    .gallery,
+    .imageLoadFromRight,
+    .imageLoadFromLeft {
+        display: none;
+    }
+}
+
+@media(max-width: 640px) {
+    body {
+        font-size: 8px;
+    }
+
+    .contactFormHalf input,
+    #message {
+        width: 220px;
+    }
+
+    #message {
+        width: 456px;
+    }
+
+    /*Offer*/
+    #offerCol {
+        margin: 0vh;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .offerColumns {
+        overflow: hidden;
+    }
+}
+
+@media(max-width:425px) {
+
+    /*Slider*/
+    .slider-text {
+        margin-top: 15vh;
+    }
+    #buttonArrow {
+        display: none;
+    }
+
+    /*Offer*/
+    #offerCol {
+        margin: 0vh;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .offerColumns {
+        overflow: hidden;
+    }
+
+    /*Do you know*/
+    .doYouKnow {
+        margin-top: 40px;
+    }
+    .doYouKnowParalax {
+        margin: 0 10px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    /*Price List*/
+    .offerHeaderPrice {
+        margin-bottom: -40px;
+    }
+    .priceList3Container,
+    .priceList2Container {
+        width: 100%;
+    }
+    .priceList3,
+    .priceList2,
+    .priceList1 {
+        padding: 20px 10px;
+    }
+    .gallery,
+    .imageLoadFromRight,
+    .imageLoadFromLeft {
+        display: none;
+    }
+
+    /*Contact form*/
+    .contact {
+        padding: 10px 10px 80px 10px;
+    }
+    .contactFormHalf input,
+    #message {
+        width: 180px;
+    }
+
+    #message {
+        width: 380px;
+    }
+    .footer {
+        padding: 3em;
+        padding-left: 5em;
+    }
+    .contactRight {
+        clear: both;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactLeft {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0%;
+
+    }
+    .contactRightText,
+    .contactLeftText {
+        text-align: center;
+    }
+}
+
+@media(max-width:414px) {
+    #message {
+        width: 372px;
+    }
+}
+
+@media(max-width:375px) {
+    .contactFormHalf input,
+    #message {
+        width: 160px;
+    }
+
+    #message {
+        width: 334px;
+    }
+}
+
+@media(max-width:360px) {
+    .contactFormHalf input,
+    #message {
+        width: 150px;
+    }
+
+    #message {
+        width: 316px;
+    }
+}
+
+@media(max-width:320px) {
+    h1 {
+        font-size: 5.6em;
+    }
+    h3 {
+        font-size: 3.3em;
+    }
+    .contactFormHalf input,
+    #message {
+        width: 284px;
+    }
+
+    #message {
+        width: 280px;
+    }
+    .contactFormHalf {
+        clear: both;
+        margin-top: 8px;
+    }
+}
+
+
+/*Responsive end*/
