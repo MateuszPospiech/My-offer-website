@@ -21,7 +21,6 @@ function checkSlide(e) {
         //so if bottom border of window - (~80% of image) is > then top border of image then add class "imageLoadFromTopActive"
         if (sliderInAt > imageHeight) {
             sliderImagesTop.classList.add('imageLoadFromTopActive')
-            console.log("aaa");
         }
     });
 
@@ -44,7 +43,6 @@ function checkSlideRight(e) {
         //so if bottom border of window - (~80% of image) is > then top border of image then add class "imageLoadFromTopActive"
         if (sliderInAt > imageHeight) {
             sliderImagesRight.classList.add('imageLoadFromTopActive')
-            console.log(imageHeight);
         }
     });
 
@@ -67,7 +65,6 @@ function checkSlideLeft(e) {
         //so if bottom border of window - (~80% of image) is > then top border of image then add class "imageLoadFromTopActive"
         if (sliderInAt > imageHeight) {
             sliderImagesLeft.classList.add('imageLoadFromTopActive')
-            console.log(imageHeight);
         }
     });
 
@@ -109,10 +106,8 @@ function changeSlideAuto() {
     if (i >= slideImage.length) i = 0; //check how many slide we got
     if (i == 0) {
         var imageWithHref = "<a target=\"_blank\" href=\"" + slideHref[i] + "\"><img src=\"img/" + slideImage[i] + "\" ></a>";
-        console.log("a1a");
     } else if (i == 1) {
         var imageWithHref = "<a target=\"_blank\" href=\"" + slideHref[i] + "\"><img src=\"img/" + slideImage[i] + "\" ></a>";
-        console.log("b1b");
     }
 
 
