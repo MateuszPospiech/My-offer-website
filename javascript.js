@@ -101,6 +101,17 @@ function hideSlide() { //hide slide with animation fade out
     $("#slider").fadeOut(500); //jQuery $("#slider) -> same like getElementById 
 }
 
+
+
+window.onload = function () {
+
+    var body = document.getElementsByTagName("body");
+
+    body.addEventListener("load", changeSlideAuto());
+};
+
+
+
 function changeSlideAuto() {
     i++; // i is 1 in first iteration
     if (i >= slideImage.length) i = 0; //check how many slide we got
